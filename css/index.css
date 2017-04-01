@@ -1,0 +1,584 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+/*-----------首页--------------*/
+.first{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	/*display: none;*/
+}
+.first img:nth-child(1){
+	width: 70%;
+	margin-top: 20%;
+	animation:ant1 1s ease 0.6s both;
+}
+@keyframes ant1{
+	0%{
+		opacity: 0;
+		transform:scale(1);
+	}
+	30%{
+		opacity: 1;
+		transform:scale(1.2);
+	}
+	60%{
+		opacity: 1;
+		transform:scale(1);
+	}
+	90%{
+		opacity: 1;
+		transform:scale(1.2);
+	}
+
+}
+.first img:nth-child(2){
+	width: 90%;
+	transform-origin:top;
+	animation:ant2 ease 0.8s both;
+}
+@keyframes ant2{
+	0%{
+		transform:rotate(12deg);
+	}
+	30%{
+		transform:rotate(-12deg);
+	}
+	60%{
+		transform:rotate(8deg);
+	}
+	90%{
+		transform:rotate(-8deg);
+	}
+
+}
+.first img:nth-child(3){
+	width: 35%;
+	position: absolute;
+	left: 32%;
+	bottom: 22%;
+	animation:ant3 ease 0.6s alternate infinite;
+}
+@keyframes ant3{
+	from{
+		transform:scale(1);
+	}
+	to{
+		transform:scale(1.1);
+	}
+
+}
+.first img:nth-child(4){
+	width: 15%;
+	position: absolute;
+	left: 60%;
+	bottom: 25%;
+	animation:ant4 ease 1s alternate infinite;
+}
+@keyframes ant4{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+
+}
+.first img:nth-child(5){
+	width: 90%;
+	position: absolute;
+	left: 6%;
+	bottom: 3.5%;
+}
+.first img:nth-child(6){
+	width: 20%;
+	position: absolute;
+	left: 8%;
+	bottom: 5.5%;
+}
+.first img:nth-child(7){
+	width: 20%;
+	position: absolute;
+	left: 30%;
+	bottom: 5.5%;
+}
+.first img:nth-child(8){
+	width: 20%;
+	position: absolute;
+	left: 52%;
+	bottom: 5.5%;
+}
+.first img:nth-child(9){
+	width: 20%;
+	position: absolute;
+	left:73%;
+	bottom: 5.5%;
+}
+/*-----------首页--------------*/
+/*-----------开始挑战----------*/
+.start{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.start .close{
+	width: 7%;
+	position: absolute;
+	right: 12%;
+	top: 12%;
+}
+.start_game{
+	width: 75%;
+	height: 45%;
+	background: url(../img/p1_from.png);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 12.5%;
+	top: 20%;
+	/*text-align: center;*/
+}
+.start_game input{
+	width: 70%;
+	height: 15%;
+	border-radius: 5px;
+	border-color: red;
+	background-color: rgb(242,187,0);
+}
+.start_game input:nth-child(1){
+	position: absolute;
+	left: 14.5%;
+	top: 35%;
+}
+.start_game input:nth-child(2){
+	position: absolute;
+	left: 14.5%;
+	top: 53%;
+}
+.start_game img{
+	position: absolute;
+	left: 22%;
+	top: 71%;
+	width: 56%;
+}
+/*-----------开始挑战----------*/
+/*-----------数钱榜------------*/
+.count_money{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*z-index:99;*/
+	display: none;
+	z-index: 1000;
+}
+.count_money .close{
+	width: 7%;
+	position: absolute;
+	right: 12%;
+	top: 12%;
+}
+.ranking{
+	width: 75%;
+	height: 55%;
+	background: url(../img/ranking_bg.png);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 12.5%;
+	top: 20%;
+	overflow: scroll;
+}
+.ranking ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.ranking ul li{
+	width: 70%;
+	list-style: none;
+	height: 15%;
+	/*padding-bottom:5%;*/
+	border-bottom: 1px dashed rgba(0,0,0,0.5);
+}
+.ranking ul li span{
+	font-size: 14px;
+}
+.ranking ul li>span:nth-of-type(2){
+	margin-left: 27%;
+}
+.ranking ul li:nth-child(1){
+	position: absolute;
+	left: 15%;
+	top:18%; 
+}
+.ranking ul li:nth-child(2){
+	position: absolute;
+	left: 15%;
+	top: 36%;
+}
+.ranking ul li:nth-child(3){
+	position: absolute;
+	left: 15%;
+	top: 54%;
+}
+.ranking ul li img:nth-child(1){
+	width: 7%;
+}
+.ranking ul li img:nth-child(2){
+	width: 16%;
+}
+/*-----------数钱榜------------*/
+/*-----------活动规则----------*/
+.activity_rule{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+.activity_rule .close{
+	width: 7%;
+	position: absolute;
+	right: 12%;
+	top: 12%;
+}
+.activity{
+	width: 75%;
+	height: 65%;
+	border: 2px solid red;
+	background-color: rgb(255,234,209);
+	border-radius: 10px;
+	position: absolute;
+	left: 12.5%;
+	top: 20%;	
+	overflow: scroll;
+}
+.activity h2{
+	text-align: center;
+	margin: 10px 0;
+}
+.activity p{
+	font-size: 14px;
+	margin:0 10px;
+}
+/*-----------活动规则----------*/
+/*-----------活动奖品----------*/
+.prize{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+.prize .close{
+	width: 7%;
+	position: absolute;
+	right: 12%;
+	top: 12%;
+}
+.prize_activity{
+	width: 75%;
+	height: 55%;
+	border: 2px solid red;
+	background-color: rgb(255,234,209);
+	border-radius: 10px;
+	position: absolute;
+	left: 12.5%;
+	top: 20%;
+	overflow: scroll;
+}
+.prize_activity h2{
+	text-align: center;
+	margin: 20px 0;
+}
+.prize_activity p{
+	font-size: 14px;
+	margin:20px;
+}
+/*-----------活动奖品----------*/
+/*-----------使用说明----------*/
+.use{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+.use .close{
+	width: 7%;
+	position: absolute;
+	right: 12%;
+	top: 12%;
+}
+.useInfo{
+	width: 75%;
+	height: 65%;
+	border: 2px solid red;
+	background-color: rgb(255,234,209);
+	border-radius: 10px;
+	position: absolute;
+	left: 12.5%;
+	top: 20%;
+	overflow: scroll;
+}
+.useInfo h2{
+	text-align: center;
+	margin: 20px 0;
+}
+.useInfo p{
+	font-size: 14px;
+	margin:0 10px;
+}
+/*-----------使用说明----------*/
+
+/*-----------second------------*/
+.second{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg2.png);
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.text{
+	width: 85%;
+	height: 20%;
+	background:url(../img/p2_kuang.png);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 8%;
+	top: 13%;
+	text-align: center;
+}
+.text img{
+	width: 80%;
+	margin-top: 5%;
+}
+.bottomMoney{
+	width: 65%;
+	position: absolute;
+	left: 18%;
+	top: 52%;
+}
+.bottomMoney .money{
+	position: absolute;
+	width: 100%;
+}
+.bottomMoney .money1{
+	position: absolute;
+	width: 100%;
+	animation:move 1s 1;
+}
+@keyframes move{
+	0%{
+		opacity: 1;
+		top: 0;
+		transform: scale(1);
+	}
+	100%{
+		opacity: 0;
+		top: -600px;
+		transform: scale(0.2);
+	}
+}
+.wall{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.hand{
+	width: 34%;
+	position: absolute;
+	left: 64%;
+	bottom: 20%;
+	animation:hand ease 0.8s infinite;
+}
+@keyframes hand{
+	from{
+		bottom: 20%;
+	}
+	to{
+		bottom: 33%;
+		opacity: 0;
+	}
+
+}
+.score{
+	width: 100%;
+	position: absolute;
+    top: 38%;
+    text-align: center;
+}
+.score span{
+	display: inline-block;
+	width: 12%;
+	height: 100%;
+	font-size: 20px;
+	padding: 20px 0;
+	color: white;
+}
+.score span:nth-child(1){
+	background: url(../img/p2_scoring.png);
+	background-size: 100% 100%;
+}
+.score span:nth-child(2){
+	background: url(../img/p2_scoring.png);
+	background-size: 100% 100%;
+}
+.score span:nth-child(3){
+	background: url(../img/p2_scoring.png);
+	background-size: 100% 100%;
+}
+.score span:nth-child(4){
+	width: 60px;
+	color: rgb(197,152,107);
+	background: url(../img/shizhong.png);
+	background-size: 100% 100%;
+}
+/*-----------second------------*/
+/*-----------three-------------*/
+.three{
+	width: 100%;
+	height: 100%;
+	background: url(../img/p3_bg.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	display: none;
+}
+.three_top{
+	width: 70%;
+	height: 6%;
+	position: absolute;
+	top: 10%;
+	left: 15%;
+}
+.three_top img{
+	width: 100%;
+	height: 100%;
+}
+.three_score{
+	width: 30%;
+    position: absolute;
+    top: 23%;
+    left: 37%;
+    font-size: 40px;
+    color: white;
+}
+.three_p{
+	width: 80%;
+	position: absolute;
+    top: 33%;
+    left: 20%;
+    color: white;
+    font-size: 14px;
+}
+.three_middle{
+	background-color: white;
+    width: 80%;
+    height: 6%;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    color: red;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.three_again{
+	width: 25%;
+	position: absolute;
+	left: 17%;
+	top: 59%;
+}
+.three_again img{
+	width: 100%;
+}
+.three_friend{
+	width: 25%;
+	position: absolute;
+	left: 54%;
+	top: 59%;
+}
+.three_friend img{
+	width: 100%;
+}
+.three .share{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position:absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 999;
+}
+.share img{
+	width: 50%;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+
+.three_bottom{
+	width: 90%;
+	position: absolute;
+	bottom: 3.5%;
+	left: 6%;
+}
+.three_bottom img:nth-child(1){
+	width: 100%;
+	height: 100%;
+}
+.three_bottom img:nth-child(2){
+	width: 20%;
+	position: absolute;
+	left: 6%;
+	bottom: 24.5%;
+}
+.three_bottom img:nth-child(3){
+	width: 20%;
+	position: absolute;
+	left: 29%;
+	bottom: 24.5%;
+}
+.three_bottom img:nth-child(4){
+	width: 20%;
+	position: absolute;
+	left: 52%;
+	bottom: 24.5%;
+}
+.three_bottom img:nth-child(5){
+	width: 20%;
+	position: absolute;
+	left:75%;
+	bottom: 24.5%;
+}
+/*-----------three-------------*/
